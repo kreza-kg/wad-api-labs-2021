@@ -1,12 +1,12 @@
-import './db';
 import dotenv from 'dotenv';
 import express from 'express';
-import './seedData';
-import usersRouter from './api/users';
 import moviesRouter from './api/movies';
 import genresRouter from './api/genres';
-
+import usersRouter from './api/users';
+import './db';
+import './seedData';
 dotenv.config();
+
 
 const app = express();
 
